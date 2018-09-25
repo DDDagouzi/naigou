@@ -1,0 +1,132 @@
+<!DOCTYPE>                                 n. 文档类型
+<title>  元素可定义文档的标题。          n.标题
+<body> 元素定义文档的主体。           n.主体
+<p> 标签定义段落。                      n.段落          paragraph    
+<br> 可插入一个简单的换行符        n.间断，改变    break
+<hr> 标签在 HTML 页面中创建一条水平线。  n.水平线   horizontal
+
+
+
+<abbr> 标签指示简称或缩写        n.缩写      Abbreviation
+	在 <abbr> 标签中使用全局的 title 属性，这样就能够在鼠标指针移动到 <abbr> 元素上时显示出简称/缩写的完整版本。
+<address> 标签定义文档或文章的作者/拥有者的联系信息      n.地址
+<blockquote> 标签定义块引用             n.长文引用
+<q> 标签定义短的引用                n.引用        quote
+<del>定义文档中已被删除的文本。             n.删除   delete
+ <ins> 标签定义已经被插入文档中的文本。       n.嵌入物      insertion
+<mark> 标签定义带有记号的文本。           n.标记     mark
+<meter> 标签定义已知范围或分数值内的标量测量。   n.仪表      meter
+<pre >元素可定义预格式化的文本。     n.预先格式     preformat
+<progress> 标签标示任务的进度（进程）   n.进步      progress
+<sup> 标签可定义上标文本。     n.上标      superscript
+<sub> 标签可定义下标文本。    n.下标     Subscript
+
+表格
+<table>表格    	border  边框值
+<th>表头行	cellpadding  单元格之间的距离
+<tr> 行		align  排列单元格内容
+<td>行格
+<<caption>>  表格标题  
+
+<ul>无序列表
+<ol>有序列表
+<li>列表项
+
+ 表表表表                         表表表表                           表表表表                  单单单单       单单单单
+<form> 标签用于为用户输入创建 HTML 表单。    n.表格   form
+              表单用于向服务器传输数据。
+		accept-charset 属性规定服务器用哪种字符集处理表单数据。【语法】    <form accept-charset="value">
+		action 属性规定当提交表单时，向何处发送表单数据。     【语法】  <form action="value">
+		autocomplete 属性规定表单是否应该启用自动完成功能   【语法】  <form autocomplete="on|off">
+		enctype 属性规定在发送到服务器之前应该如何对表单数据进行编码。   【语法】   <form enctype="value">    application/x-www-form-urlencoded
+													在发送前编码所有字符（默认）
+												multipart/form-data
+													不对字符编码。
+													在使用包含文件上传控件的表单时，必须使用该值。
+												text/plain
+												空格转换为 "+" 加号，但不对特殊字符编码
+		method 属性规定如何发送表单数据   【语法】  <form method="get|post">
+		name 属性规定表单的名称。  【语法】   <form name="value">
+		novalidate 属性规定当提交表单时不对其进行验证。  【语法】 <form novalidate="novalidate">
+		target 属性规定在何处打开 action URL。  【语法】  <form target="value">  _blank
+									在新窗口中打开。
+									_self
+									默认。在相同的框架中打开。
+									_parent
+									在父框架集中打开。
+									_top
+									在整个窗口中打开。	
+									framename
+									在指定的框架中打开。
+				---------------------------------------------------------------------
+		<input> 标签用于搜集用户信息。
+					accept    属性规定上传的文件类型。  【语法】  <input accept="value">	MIME,type
+					alt    属性为用户无法查看图像时提供的文本信息。	【语法】   <input alt="value">
+                                			autocomplete   属性规定输入字段是否应该启用自动完成功能。  【语法】   <input autocomplete="on|off">
+					checked   属性规定在页面加载时被预先选定的 input 元素。  【语法】  <input checked="checked">
+					disabled   属性规定应该禁用 input 元素。  【语法】  <input disabled="disabled">
+					       通过 JavaScript 来删除 disabled 值，将 input 元素的值切换为可用。
+					form   属性规定 input 元素所属的一个或多个表单。 【语法】  <input form="id">
+					       form属性的值必须是其所属表单的 id。
+					formaction   属性覆盖 form 元素的 action 属性。  【语法】   <input formaction="url">
+					formenctype   属性覆盖 form 元素的 enctype 属性。  【语法】   <input formenctype="value">
+					formmethod  属性覆盖 form 元素的 method 属性。  【语法】  <input formmethod="get|post">
+					ormnovalidate  属性覆盖 form 元素的 novalidate 属性。  【语法】  <input formnovalidate="formnovalidate">
+					formtarget  属性覆盖 form 元素的 target 属性。【语法】  <input formtarget="value">   
+											值：_black  _self  _parent  _top    framename
+					height  width  属性只适用于 <input type="image">，它规定 image input 的高度和宽度。 【语法】  <input height="pixels|%">
+					list    属性引用数据列表，其中包含输入字段的预定义选项。【语法】  <input list="value">
+													
+					max  min  属性规定输入字段所允许的最大值 最小值。 【语法】   <input max="number|date">
+					maxlength  属性规定输入字段的最大长度，以字符个数计。【语法】   <input maxlength="value">
+					multiple    属性规定输入字段可选择多个值。 【语法】  <input multiple="multiple">
+					name  属性规定 input 元素的名称。  【语法】  <input name="value">
+					pattern  属性规定用于验证输入字段的模式。 【语法】  <input pattern="regexp"> 
+					placeholder  属性提供可描述输入字段预期值的提示信息（hint）  【语法】  <input placeholder="text">
+					readonly  属性规定输入字段为只读。  【语法】   <input readonly="readonly">
+						readonly 属性可以防止用户对值进行修改，直到满足某些条件为止（比如选中了一个复选框）。
+						然后，需要使用 JavaScript 消除 readonly 值，将输入字段切换到可编辑状态。
+					required   属性规定必需在提交之前填写输入字段。  【语法】  <input required="required">
+					size   属性规定输入字段的宽度。  【语法】  <input size="characters/pixels">
+						size 属性定义的是以像素为单位的输入字段宽度。
+					src 属性定义图片形式的提交按钮。    语法  <input src="value">
+						src 属性必须与 <input type="image"> 同时使用。
+					step 属性规定输入字段的合法数字间隔。  语法   语法  <input step="number">
+						假如 step="3"，则合法数字应该是 -3、0、3、6，以此类推     step 属性可以与 max 以及 min 属性配合使用，以创建合法值的范围。
+					type 属性规定 input 元素的类型。  语法   <input type="value">
+						button	定义可点击按钮（多数情况下，用于通过 JavaScript 启动脚本）。语法  <input type="button" value="Click me" />
+						checkbox	定义复选项。
+						disabled  规定输入字段应该被禁用。
+						date	用于应该包含日期的输入字段。
+						file	定义输入字段和 "浏览"按钮，供文件上传。
+						hidden	定义隐藏的输入字段。
+						image	定义图像形式的提交按钮。
+						password	    定义密码字段。该字段中的字符被掩码。
+						radio	定义单选按钮。
+						reset	定义重置按钮。重置按钮会清除表单中的所有数据。
+						size	规定输入字段的宽度（以字符计）
+						submit	定义提交按钮。提交按钮会把表单数据发送到服务器。
+						text	定义单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符。
+					value  n.值
+				-------------------------------------------------------------------------------------
+
+		<button> 标签定义一个可点击按钮          （建议使用input）   
+					语法<button type="button">Click Me!</button>
+					
+
+		<textarea> 元素定义多行输入字段（文本域）
+
+		<option> 元素定义下拉列表中的一个选项
+					disabled  规定此选项应在首次加载时被禁用           <option disabled="disabled">Opel</option>
+					lable     定义当使用 <optgroup> 时所显示的标注。 
+					selected    规定选项（在首次显示在列表中时）表现为选中状态。 <option selected="selected">Saab</option>
+					value   定义送往服务器的选项值。
+					  （ 与 input 元素配合使用该元素   使用 input 元素的 list 属性来绑定 datalist  ）
+						<input list="cars" />
+						<datalist id="cars">
+							<option value="BMW">
+							<option value="Ford">
+							<option value="Volvo">
+						</datalist>
+
+
